@@ -1,9 +1,10 @@
 <template>
   <div class="ibook-layout">
+    <Header />
     <Container>
-      <Header />
       <Nuxt />
     </Container>
+    <Footer />
   </div>
 </template>
 
