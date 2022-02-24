@@ -1,7 +1,5 @@
 <template>
-  <div class="component">
-    <h1>Home Page</h1>
-  </div>
+  <HomeTemplate />
 </template>
 
 <script lang="ts">
@@ -11,8 +9,3 @@ export default Vue.extend({
   layout: "ibook"
 });
 </script>
-
-<style lang="scss" scoped>
-.component {
-}
-</style>
