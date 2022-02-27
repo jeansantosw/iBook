@@ -1,21 +1,25 @@
-import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators'
+import { Module, VuexModule } from 'vuex-module-decorators'
+import { Book } from "@/models"
 
 @Module({ name: 'books', stateFactory: true, namespaced: true })
 export default class Books extends VuexModule {
-  private count = 0 //
 
-  public get $count() {
-    return this.count
-  }
+  books = [{}] as Book[];
 
-  @Mutation
-  private INCREMENT(number: number) {
-    this.count += number
-  }
+  // private count = 0 //
 
-  @Action({commit: "INCREMENT"})
-  public increment(count: number) {
-    return count
-  }
+  // public get $count() {
+  //   return this.count
+  // }
+
+  // @Mutation
+  // private INCREMENT(number: number) {
+  //   this.count += number
+  // }
+
+  // @Action({commit: "INCREMENT"})
+  // public increment(count: number) {
+  //   return count
+  // }
 
 }
