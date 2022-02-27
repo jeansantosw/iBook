@@ -37,7 +37,7 @@ export default {
    },
 
    axios: {
-     baseURL: process.env.NOV_ENV === 'production' ? "" : "http://localhost:8080"
+     baseURL: "http://localhost:3333"
    },
 
   // Modules: https://go.nuxtjs.dev/config-modules
