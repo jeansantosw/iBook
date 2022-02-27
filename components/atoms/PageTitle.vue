@@ -1,6 +1,6 @@
 <template>
   <h1 class="page-title">
-    {{ text }}, <b>{{ strong }}</b>
+    {{ text }} <b>{{ strong }}</b>
   </h1>
 </template>
 
